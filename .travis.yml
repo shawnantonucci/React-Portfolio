@@ -7,8 +7,8 @@ branches:
     - master
 
 before_script:
-  - yarn add -g firebase-tools
-  - yarn add -g wintersmith
+  - yarn add firebase-tools
+  - yarn add wintersmith
 
 script:
   - wintersmith build
