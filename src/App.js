@@ -1,24 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import NavBar from "./components/NavBar";
 
 function App() {
   return (
     <div className="App">
+      <NavBar />
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <img
+          src={
+            "https://firebasestorage.googleapis.com/v0/b/shawn-react-portfolio.appspot.com/o/images%2Flogo.svg?alt=media&token=5e3427a2-e391-4afb-9acc-9b6a4ca41992"
+          }
+          className="App-logo"
+          alt="logo"
+        />
       </header>
+
     </div>
   );
 }
