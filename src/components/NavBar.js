@@ -7,10 +7,6 @@ import {
   MDBNavLink,
   MDBNavbarToggler,
   MDBCollapse,
-//   MDBDropdown,
-//   MDBDropdownToggle,
-//   MDBDropdownMenu,
-//   MDBDropdownItem,
   MDBIcon
 } from "mdbreact";
 
@@ -25,7 +21,7 @@ class NavbarPage extends Component {
 
   render() {
     return (
-      <MDBNavbar color="default-color" dark expand="md">
+      <MDBNavbar color="default-color" light expand="md">
         <MDBNavbarBrand>
           <strong className="white-text">Shawn Antonucci's Portfolio</strong>
         </MDBNavbarBrand>
@@ -47,41 +43,23 @@ class NavbarPage extends Component {
             <MDBNavItem>
               <MDBNavLink to="#!">Contact</MDBNavLink>
             </MDBNavItem>
-            <MDBNavItem>
-              {/* <MDBDropdown>
-              <MDBDropdownToggle nav caret>
-                <div className="d-none d-md-inline">Dropdown</div>
-              </MDBDropdownToggle>
-              <MDBDropdownMenu className="dropdown-default" right>
-                <MDBDropdownItem href="#!">Action</MDBDropdownItem>
-                <MDBDropdownItem href="#!">Another Action</MDBDropdownItem>
-                <MDBDropdownItem href="#!">Something else here</MDBDropdownItem>
-                <MDBDropdownItem href="#!">Something else here</MDBDropdownItem>
-              </MDBDropdownMenu>
-            </MDBDropdown> */}
-            </MDBNavItem>
+            <MDBNavItem />
           </MDBNavbarNav>
           <MDBNavbarNav right>
             <MDBNavItem>
-              <MDBNavLink className="waves-effect waves-light" to="#" onClick={() => window.location.href = "https://github.com/shawnantonucci"}>
+              <MDBNavLink
+                className="waves-effect waves-light"
+                to="#"
+                onClick={() =>
+                  (window.location.href = "https://github.com/shawnantonucci")
+                }
+              >
                 GitHub
                 <MDBIcon fab icon="github" />
               </MDBNavLink>
             </MDBNavItem>
             <MDBNavItem />
-            <MDBNavItem>
-              {/* <MDBDropdown>
-              <MDBDropdownToggle nav caret>
-                <MDBIcon icon="user" />
-              </MDBDropdownToggle>
-              <MDBDropdownMenu className="dropdown-default" right>
-                <MDBDropdownItem href="#!">Action</MDBDropdownItem>
-                <MDBDropdownItem href="#!">Another Action</MDBDropdownItem>
-                <MDBDropdownItem href="#!">Something else here</MDBDropdownItem>
-                <MDBDropdownItem href="#!">Something else here</MDBDropdownItem>
-              </MDBDropdownMenu>
-            </MDBDropdown> */}
-            </MDBNavItem>
+            <MDBNavItem />
           </MDBNavbarNav>
         </MDBCollapse>
       </MDBNavbar>

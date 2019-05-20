@@ -40,9 +40,9 @@ class Header extends Component {
       <>
         <Router>
           <div>
-            <MDBNavbar dark expand="md" fixed="top" scrolling transparent>
+            <MDBNavbar dark expand="md" fixed="top" scrolling color="black">
               <MDBContainer>
-                <MDBNavbarBrand>
+                <MDBNavbarBrand style={{marginRight:  10}}>
                   <strong className="white-text">
                     Shawn Antonucci's Portfolio
                   </strong>
