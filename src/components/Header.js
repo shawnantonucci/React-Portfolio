@@ -14,8 +14,13 @@ import {
   MDBBtn,
   MDBView,
   MDBContainer,
-  MDBIcon
+  MDBIcon,
+  MDBCardTitle,
+  MDBCardText,
+  MDBCard
 } from "mdbreact";
+import profileImg from "../assets/profile.jpg";
+import reactLogo from "../assets/reactlogo.png";
 
 class Header extends Component {
   state = {
@@ -42,7 +47,7 @@ class Header extends Component {
           <div>
             <MDBNavbar dark expand="md" fixed="top" scrolling color="black">
               <MDBContainer>
-                <MDBNavbarBrand style={{marginRight:  10}}>
+                <MDBNavbarBrand style={{ marginRight: 10 }}>
                   <strong className="white-text">
                     Shawn Antonucci's Portfolio
                   </strong>
@@ -122,6 +127,51 @@ class Header extends Component {
             </MDBContainer>
           </MDBMask>
         </MDBView>
+        <MDBContainer fluid style={{ margin: "5% 0" }}>
+          <MDBRow
+            style={{
+              flexDirection: "column",
+              alignContent: "center",
+              justifyContent: "center"
+            }}
+          >
+            <MDBCol md="4" style={{ display: "flex" }}>
+              <div>
+                <img
+                  src={profileImg}
+                  alt="thumbnail"
+                  // className="img-thumbnail rounded mx-auto d-block img-fluid z-depth-2"
+                  style={{ alignSelf: "center", width: "18rem", height: "auto" }}
+                />
+              </div>
+              <div>
+                <img
+                  src={reactLogo}
+                  alt="thumbnail"
+                  // className="img-thumbnail"
+                  style={{ alignSelf: "center", width: "10rem" }}
+                />
+              </div>
+            </MDBCol>
+            <MDBCard
+              className="card-body"
+              style={{ width: "44rem", marginTop: "1rem" }}
+            >
+              <MDBCardTitle>Who am I?</MDBCardTitle>
+              <MDBCardText>
+                Having completed the front-end and back-end programs with a 100%
+                mastery rate, I am currently a Full-Time and Part-time Project
+                Manager for Two classes of Fullstack Web Development at Lambda
+                School working remote. I was born and raised in New York. I am
+                currently living in Los Angeles with my wife and daughter. I
+                have always had a passion for technology and computers. From an
+                early age I loved to tinker with all sorts of electronics and
+                during my highschool years I became very interested in software,
+                web, mobile, and game development.
+              </MDBCardText>
+            </MDBCard>
+          </MDBRow>
+        </MDBContainer>
       </>
     );
   }
